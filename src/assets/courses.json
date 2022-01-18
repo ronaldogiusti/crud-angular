@@ -1,0 +1,6 @@
+[
+  { "_id": "1", "name": "Hydrogen", "category": "H" },
+  { "_id": "2", "name": "Helium", "category": "He" },
+  { "_id": "3", "name": "Lithium", "category": "Li" },
+  { "_id": "4", "name": "Beryllium", "category": "Be" }
+]
