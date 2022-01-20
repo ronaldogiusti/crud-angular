@@ -8,7 +8,7 @@ import { Course } from './../model/course';
   providedIn: 'root'
 })
 export class CoursesService {
-  private readonly API_URL = '/assets/courses.json';
+  private readonly API_URL = 'api/courses/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class CoursesService {
     return this.httpClient.get<Course[]>(this.API_URL)
       .pipe(
         first(), // take the first response and finishes the connection properly
-        delay(2000),
+        delay(500),
         tap(c => console.log('courses: ', c))
       );
   }

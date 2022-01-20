@@ -14,7 +14,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class CoursesComponent implements OnInit {
   courses$: Observable<Course[]>; // mat-table iterates over an array OR an observable
 
-  displayedColumns = ['name', 'category'];
+  displayedColumns = ['id', 'name', 'category'];
 
   constructor(private courseService: CoursesService, public dialog: MatDialog) {
     this.courses$ = this.courseService.list() // no need to subscribe since mat-table can treat an observable
